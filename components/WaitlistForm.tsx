@@ -13,17 +13,42 @@ const WaitlistForm: React.FC<WaitlistFormProps> = ({ text, variant = 'default' }
 
   const isHero = variant === 'hero';
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!email) return;
 
     setStatus('loading');
-    
-    // Simulate API call
-    setTimeout(() => {
-      setStatus('success');
-      setEmail('');
-    }, 1500);
+
+    try {
+      // Web3Forms API endpoint
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY || 'YOUR_ACCESS_KEY_HERE',
+          subject: 'New GoGoGuide Waitlist Signup',
+          email: email,
+          from_name: 'GoGoGuide Landing Page',
+          message: `New waitlist signup: ${email}`
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus('success');
+        setEmail('');
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      alert('提交失败，请稍后再试 / Submission failed, please try again later');
+      setStatus('idle');
+    }
   };
 
   return (
