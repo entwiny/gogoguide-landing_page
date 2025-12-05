@@ -1,0 +1,11 @@
+# robots.txt for GoGoGuide
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://entwiny.github.io/gogoguide-landing_page/sitemap.xml
+
+# Block common bot traps
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /_vite/
