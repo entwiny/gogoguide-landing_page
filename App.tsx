@@ -1,20 +1,48 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Language } from './types';
 import { CONTENT, HERO_IMAGES } from './constants';
 import Countdown from './components/Countdown';
 import WaitlistForm from './components/WaitlistForm';
 import { Globe, Heart, Sparkles, Languages, Check, ArrowRight } from 'lucide-react';
+import { detectUserLanguage, saveLanguagePreference, getSavedLanguagePreference } from './utils/languageDetector';
 
 const App = () => {
-  const [lang, setLang] = useState<Language>(Language.ZH);
-  // Initialize with a random image from the list. 
+  // 优先使用保存的语言偏好，否则使用中文作为初始值
+  const [lang, setLang] = useState<Language>(() => getSavedLanguagePreference() || Language.ZH);
+  const [isLanguageDetected, setIsLanguageDetected] = useState(false);
+
+  // Initialize with a random image from the list.
   // Lazy initialization ensures this only runs once on mount.
   const [bgImage] = useState(() => HERO_IMAGES[Math.floor(Math.random() * HERO_IMAGES.length)]);
-  
+
   const t = CONTENT[lang];
 
+  // 自动检测用户语言
+  useEffect(() => {
+    const detectLanguage = async () => {
+      // 如果已有保存的偏好，不再自动检测
+      const savedLang = getSavedLanguagePreference();
+      if (savedLang) {
+        setIsLanguageDetected(true);
+        return;
+      }
+
+      // 自动检测语言
+      const detectedLang = await detectUserLanguage();
+      setLang(detectedLang);
+      setIsLanguageDetected(true);
+      console.log('Auto-detected language:', detectedLang);
+    };
+
+    detectLanguage();
+  }, []);
+
   const toggleLanguage = () => {
-    setLang(prev => prev === Language.EN ? Language.ZH : Language.EN);
+    setLang(prev => {
+      const newLang = prev === Language.EN ? Language.ZH : Language.EN;
+      saveLanguagePreference(newLang); // 保存用户的手动选择
+      return newLang;
+    });
   };
 
   // Helper to get icon component
