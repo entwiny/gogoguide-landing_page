@@ -70,17 +70,17 @@ export const CONTENT: Record<Language, Translation> = {
   },
   [Language.ZH]: {
     nav: {
-      features: "功能特色",
+      features: "产品理念",
       about: "关于我们",
       join: "加入早鸟",
     },
     hero: {
-      titlePrefix: "更聪明的旅行",
-      titleHighlight: "口袋里的导游",
-      subtitle: "想要专业讲解时就有。想要自由探索时就走。不踩坑，不赶场。",
+      titlePrefix: "与懂你的",
+      titleHighlight: "灵魂伴侣同行",
+      subtitle: "GoGoGuide 不仅仅是一个 App。它是陪你感受旅途惊喜、听懂你情绪的伙伴，带你跨越语言障碍，自在探索世界。",
       cta: "加入等候名单",
       launched: "2月14日 温暖上线",
-      emailPrompt: "抢先体验：",
+      emailPrompt: "输入邮箱，第一时间开启你的心灵之旅：",
     },
     countdown: {
       days: "天",
@@ -111,11 +111,11 @@ export const CONTENT: Record<Language, Translation> = {
       ]
     },
     waitlist: {
-      title: "加入首批 100 人",
-      subtitle: "首批体验「无导游的导游」服务。",
+      title: "加入早鸟计划",
+      subtitle: "成为首批 100 位找到「旅行灵魂伴侣」的体验者。",
       placeholder: "输入您的邮箱地址",
       button: "加入早鸟",
-      success: "搞定！我们会尽快联系你。",
+      success: "欢迎加入大家庭！我们会尽快联系您。",
       spotsLeft: "早鸟名额仅剩 42 位。",
     },
     footer: {
