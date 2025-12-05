@@ -16,17 +16,17 @@ export const HERO_IMAGES = [
 export const CONTENT: Record<Language, Translation> = {
   [Language.EN]: {
     nav: {
-      features: "Philosophy",
+      features: "Features",
       about: "About Us",
       join: "Join Early",
     },
     hero: {
-      titlePrefix: "Travel with a friend who",
-      titleHighlight: "Truly Understands",
-      subtitle: "GoGoGuide is more than an app. It's a companion that shares the wonder of the journey, understands your mood, and connects you to the world without barriers.",
+      titlePrefix: "Travel smarter with",
+      titleHighlight: "Your Pocket Guide",
+      subtitle: "Expert insights when you want them. Complete freedom when you don't. No tourist traps, no schedules.",
       cta: "Join the Waitlist",
       launched: "Coming Feb 14",
-      emailPrompt: "Enter your email to be the first to know:",
+      emailPrompt: "Get early access:",
     },
     countdown: {
       days: "Days",
@@ -37,31 +37,31 @@ export const CONTENT: Record<Language, Translation> = {
     },
     features: {
       title: "Why GoGoGuide?",
-      subtitle: "We understand the real pain points of modern travelers.",
+      subtitle: "We get it. Modern travel has real problems.",
       items: [
         {
-          title: "Expert Insights, Zero Intrusion",
-          description: "Craving rich storytelling and local knowledge, but want to wander at your own pace? Get professional narration without the awkwardness of small talk or the pressure to keep up with a group.",
+          title: "Expert Stories, No Small Talk",
+          description: "Want deep local knowledge without the awkward chit-chat? Get professional insights while exploring at your own pace. No pressure, no rushing.",
           icon: "heart"
         },
         {
-          title: "Pure Journey, No Hidden Agendas",
-          description: "Tired of pushy guides with shopping detours? GoGoGuide has no commission, no traps—just honest, authentic experiences tailored to your curiosity, not someone's wallet.",
+          title: "Zero Shopping Traps",
+          description: "Sick of guides dragging you to gift shops? No commissions here. Just authentic experiences for your curiosity, not someone's wallet.",
           icon: "sparkles"
         },
         {
-          title: "Spontaneous Adventures, Instantly Ready",
-          description: "That sudden urge to explore at sunset? No need to book days ahead or scramble for a guide. GoGoGuide is in your pocket, ready whenever inspiration strikes.",
+          title: "Ready When You Are",
+          description: "Sudden sunset adventure? No booking needed. GoGoGuide lives in your pocket, ready whenever wanderlust hits.",
           icon: "languages"
         }
       ]
     },
     waitlist: {
-      title: "Become a Founding Member",
-      subtitle: "Join the first 100 travelers to find their perfect travel soulmate.",
+      title: "Join the First 100",
+      subtitle: "Be among the first travelers to experience guideless guiding.",
       placeholder: "Enter your email",
       button: "Join Early Bird",
-      success: "Welcome to the family. We'll speak soon.",
+      success: "You're in! We'll be in touch soon.",
       spotsLeft: "Only 42 spots remaining.",
     },
     footer: {
