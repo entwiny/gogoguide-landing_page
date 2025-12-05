@@ -37,21 +37,21 @@ export const CONTENT: Record<Language, Translation> = {
     },
     features: {
       title: "Why GoGoGuide?",
-      subtitle: "We believe travel is about the feeling, not just the facts.",
+      subtitle: "We understand the real pain points of modern travelers.",
       items: [
         {
-          title: "Always By Your Side",
-          description: "A gentle presence that accompanies you through every street and alley. Never feel lonely on a solo trip again.",
+          title: "Expert Insights, Zero Intrusion",
+          description: "Craving rich storytelling and local knowledge, but want to wander at your own pace? Get professional narration without the awkwardness of small talk or the pressure to keep up with a group.",
           icon: "heart"
         },
         {
-          title: "Emotional Connection",
-          description: "Share your awe, your curiosity, and your joy. GoGoGuide responds with empathy, turning sightseeing into a shared experience.",
+          title: "Pure Journey, No Hidden Agendas",
+          description: "Tired of pushy guides with shopping detours? GoGoGuide has no commission, no traps—just honest, authentic experiences tailored to your curiosity, not someone's wallet.",
           icon: "sparkles"
         },
         {
-          title: "Beyond Language",
-          description: "Break down every barrier. Connect deeply with local cultures and histories as if you were a native, anywhere in the world.",
+          title: "Spontaneous Adventures, Instantly Ready",
+          description: "That sudden urge to explore at sunset? No need to book days ahead or scramble for a guide. GoGoGuide is in your pocket, ready whenever inspiration strikes.",
           icon: "languages"
         }
       ]
@@ -91,21 +91,21 @@ export const CONTENT: Record<Language, Translation> = {
     },
     features: {
       title: "为什么选择 GoGoGuide？",
-      subtitle: "我们相信，旅行的意义在于感受，而不仅仅是打卡。",
+      subtitle: "我们深刻理解现代旅行者的真实痛点。",
       items: [
         {
-          title: "温情陪伴",
-          description: "穿梭在大街小巷时的温柔守护。无论独自旅行还是漫步异国，有它在，你永远不会感到孤单。",
+          title: "专业讲解，不被打扰",
+          description: "想听深度故事和当地见闻，却不想被真人导游的寒暄和节奏束缚？GoGoGuide 给你专业级的讲解，却让你保持完全的自由和私密空间。",
           icon: "heart"
         },
         {
-          title: "情绪价值",
-          description: "分享你的惊叹、好奇与快乐。GoGoGuide 能给予充满共鸣的回应，让每一次看风景都变成心灵的交流。",
+          title: "纯粹旅行，绝无套路",
+          description: "担心遇到不靠谱的导游，被拉去购物点拿回扣？GoGoGuide 没有佣金、没有套路，只有真诚的文化分享和为你量身定制的探索体验。",
           icon: "sparkles"
         },
         {
-          title: "跨越语言",
-          description: "打破所有沟通的壁垒。像当地人一样深入了解文化与历史，无论身在何处，都能自在融入。",
+          title: "说走就走，即刻陪伴",
+          description: "临时起意想去看日落？不用提前几天预约，也不用慌忙找导游。GoGoGuide 就在你口袋里，灵感来了，随时启程。",
           icon: "languages"
         }
       ]
