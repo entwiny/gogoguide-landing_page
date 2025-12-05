@@ -70,17 +70,17 @@ export const CONTENT: Record<Language, Translation> = {
   },
   [Language.ZH]: {
     nav: {
-      features: "产品理念",
+      features: "功能特色",
       about: "关于我们",
       join: "加入早鸟",
     },
     hero: {
-      titlePrefix: "与懂你的",
-      titleHighlight: "灵魂伴侣同行",
-      subtitle: "GoGoGuide 不仅仅是一个 App。它是陪你感受旅途惊喜、听懂你情绪的伙伴，带你跨越语言障碍，自在探索世界。",
+      titlePrefix: "更聪明的旅行",
+      titleHighlight: "口袋里的导游",
+      subtitle: "想要专业讲解时就有。想要自由探索时就走。不踩坑，不赶场。",
       cta: "加入等候名单",
       launched: "2月14日 温暖上线",
-      emailPrompt: "输入邮箱，第一时间开启你的心灵之旅：",
+      emailPrompt: "抢先体验：",
     },
     countdown: {
       days: "天",
@@ -91,31 +91,31 @@ export const CONTENT: Record<Language, Translation> = {
     },
     features: {
       title: "为什么选择 GoGoGuide？",
-      subtitle: "我们深刻理解现代旅行者的真实痛点。",
+      subtitle: "我们懂。旅行确实有这些烦恼。",
       items: [
         {
-          title: "专业讲解，不被打扰",
-          description: "想听深度故事和当地见闻，却不想被真人导游的寒暄和节奏束缚？GoGoGuide 给你专业级的讲解，却让你保持完全的自由和私密空间。",
+          title: "专业讲解，零社交负担",
+          description: "想听当地故事，但不想应付闲聊？专业讲解随时有，按自己节奏逛。不尴尬，不赶路。",
           icon: "heart"
         },
         {
-          title: "纯粹旅行，绝无套路",
-          description: "担心遇到不靠谱的导游，被拉去购物点拿回扣？GoGoGuide 没有佣金、没有套路，只有真诚的文化分享和为你量身定制的探索体验。",
+          title: "零购物陷阱",
+          description: "烦透了被拉去礼品店？这里没回扣。只有真实体验，为你的好奇心服务，不是别人的钱包。",
           icon: "sparkles"
         },
         {
-          title: "说走就走，即刻陪伴",
-          description: "临时起意想去看日落？不用提前几天预约，也不用慌忙找导游。GoGoGuide 就在你口袋里，灵感来了，随时启程。",
+          title: "随时出发",
+          description: "突然想看日落？不用预约。GoGoGuide 在你口袋里，说走就走。",
           icon: "languages"
         }
       ]
     },
     waitlist: {
-      title: "加入早鸟计划",
-      subtitle: "成为首批 100 位找到“旅行灵魂伴侣”的体验者。",
+      title: "加入首批 100 人",
+      subtitle: "首批体验「无导游的导游」服务。",
       placeholder: "输入您的邮箱地址",
       button: "加入早鸟",
-      success: "欢迎加入大家庭！我们会尽快联系您。",
+      success: "搞定！我们会尽快联系你。",
       spotsLeft: "早鸟名额仅剩 42 位。",
     },
     footer: {
